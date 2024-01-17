@@ -661,7 +661,7 @@ section {
 
 
 
-/* Media query for screen with a maximum width of 320px (iPhone 4) */
+/* Media query for screen with a maximum width of 320px IPHONE 4 */
 
 
 //HOME PAGE
@@ -957,3 +957,154 @@ section {
     }
     
 }
+
+
+//IPHONE X
+//HOME PAGE
+@media screen and (max-width: 380px) {
+    
+    body {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        .header-content {
+            grid-template-columns: 1fr; /* Adjust grid layout for smaller screens */
+            height: auto; /* Adjust height for smaller screens */
+        }
+    }
+
+    .header-content .left-header .image {
+        
+        margin-left: 2rem;
+    }
+
+    .header-content .right-header {
+        padding-left: 6px;
+        padding-right: 3rem;}
+
+    .header-content .right-header .name {
+            font-size: 1.8rem;
+        }
+       
+
+    .left-header {
+        .h-shape {
+            width: 100%; /* Adjust shape width for smaller screens */
+        }
+
+        .image {
+            width: 100%; /* Adjust image width for smaller screens */
+            margin-left: 0; /* Adjust margin for smaller screens */
+            height: 70vh; /* Set a fixed height for the image container on smaller screens */
+        }
+
+        img {
+            width: 100%; /* Ensure the image scales appropriately */
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: all 0.4s ease-in-out;
+            
+        }
+    }
+
+    .right-header {
+        padding-right: 2rem; /* Adjust padding for smaller screens */
+    }
+
+    .controls {
+        top: 55%; /* Adjust position for smaller screens */
+    }
+
+   
+}
+
+//ABOUT SECTION
+
+@media screen and (max-width: 380px) {
+
+   .main-title span.bg-text {
+    display: none; /* Hidin the background text */
+}
+
+    .about-container {
+        padding: 1rem; /* Adjust padding as needed */
+    }
+
+    .main-title {
+        margin-bottom: 4rem; /* Adjust margin as needed */
+    }
+
+    .about-stats {
+        padding: 1rem; /* Adjust padding as needed */
+    }
+
+    .timeline {
+        padding: 1rem 0 3rem 1rem; /* Adjust padding as needed */
+    }
+    .left-about p {
+        padding-right: 2rem;
+        font-size: 14px;
+    }
+}
+
+//Portfolio
+@media screen and (max-width: 380px) {
+#main-title .bg-text {
+    display: none; /* Hide the background text */
+}
+
+    .portfolios {
+        padding-left: 1.5rem; /* Adjust padding as needed */
+        grid-template-columns: 1fr; /* Display one column in a row */
+        grid-gap: 3rem; /* Adjust grid gap as needed */
+        padding-right: 20px;
+        padding-right: 1.5rem;
+    }
+
+    .portfolio-item {
+        max-width: none; /* Remove max-width on portfolio items */
+        margin-bottom: 2rem; /* Add spacing between portfolio items */
+    }
+
+    .wrapper img {
+        height: auto; /* Allow the height to adjust based on content */
+    }
+
+    .container h3 {
+        font-size: 1.2rem; /* Adjust font size as needed */
+    }
+}
+
+//Certificates
+@media screen and (max-width: 380px) {
+    .main-title .bg-text {
+        display: none; /* Hide the background text */
+    }
+    
+    .Certificates-content.main-title {
+        font-size:1.5rem ;}
+    
+    .Certificates {
+        grid-template-columns: 1fr; /* Display one column in a row */
+        grid-gap: 2rem; /* Adjust grid gap as needed */
+        padding: 1rem; /* Adjust padding as needed */
+    }
+
+    .certificate {
+        max-width: none; /* Remove max-width on certificates */
+        margin-bottom: 2rem; /* Add spacing between certificates */
+    }
+
+    .certificate img {
+        height: auto; /* Allow the height to adjust based on content */
+    }
+
+    .certificate-text {
+        padding: 1rem; /* Adjust padding as needed */
+        border-top: 5px solid var(--color-secondary); /* Reduce the border-top size */
+    }
+
+    .certificate-text h4 {
+        font-size: 1.2rem; /* Adjust font size as needed */
+    }
+}
+

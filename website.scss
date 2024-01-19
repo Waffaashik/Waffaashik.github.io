@@ -560,6 +560,7 @@ section {
         
     }
 }
+
 /*Independed componennts*/
 .btn-con{
     display: flex;
@@ -661,58 +662,53 @@ section {
 
 
 
-/* Media query for screen with a maximum width of 320px IPHONE 4 */
 
 
-//HOME PAGE
-@media only screen and (max-width: 320px) {
-    body {
-        font-size: 0.9rem; /* Adjust the font size for iphone4 */
-    }
+//ADDING MEDIA QUERIES
+//MAX-WIDTH 480PX
 
-    header {
-        height: auto; /* Adjust the header height  */
-    }
-
-    .header-content {
-        grid-template-columns: 1fr; /* Adjust the grid columns and padding  */
-        padding: 1rem; 
-    }
-
- 
-
-    .right-header {
-        padding-right: 1rem;/* Adjust padding */
-        font-size: -1rem; 
-        width: 400px;
-    }
-
+@media only screen and (max-width: 480px) {
+        body {
+            font-size: 1rem; /* Adjusting the font size */
+        }
     
-    .controls {
-        width: 30px; /* Adjust the width,height and size of control buttons for smaller screens */
-        height: 30px; 
-        font-size: 1rem; 
-    }
-
-    .header-content .left-header .image {
-        border-radius: var(--br-sm-2);
-        height: 90%;
-        width: 59%;
-        margin-left: 1rem;
-        background-color: var(--color-black);
-        transition: all 0.4s ease-in-out;
+        header {
+            height: auto; /* Adjusted the header height  */
+        }
+    
+        .header-content {
+            grid-template-columns: 1fr; /* Adjust the grid columns and padding  */
+            padding: 1rem; 
+        }
+    
+     
+    
+        .right-header {
+            padding-right: 1rem;/* Adjust padding */
+            font-size: -1rem; 
+            width: 400px;
+        }
+    
         
-    }
-    .header-content .left-header .image img{
-    filter: none;
-    opacity: 1;}
+        .controls {
+            width: 30px; /* Adjust the width,height and size of control buttons for smaller screens */
+            height: 30px; 
+            font-size: 1rem; 
+        }
     
-}
-
-
-
-//ABOUT SECTION
-@media only screen and (max-width: 320px) {
+        .header-content .left-header .image {
+            border-radius: var(--br-sm-2);
+            height: 90%;
+            width: 59%;
+            margin-left: 1rem;
+            background-color: var(--color-black);
+            transition: all 0.4s ease-in-out;
+            
+        }
+        .header-content .left-header .image img{
+        filter: none;
+        opacity: 1;
+    }
     .main-title span.bg-text {
         display: none; /* Hidin the background text */
     }
@@ -797,14 +793,7 @@ section {
     p {
         font-size: 0.9rem; 
     }
-    
-}
 
-
-//PORTFOLIO SECTION
-
-
-@media only screen and (max-width: 320px) {
     #main-title .bg-text {
         display: none; /* Hide the background text */
     }
@@ -847,13 +836,6 @@ section {
         transform: none; /* Disable transform on hover  */
     }
 
-    
-}
-
-
-//CERTIFICATE SECTION
-
-@media only screen and (max-width: 320px) {
     .Certificates {
         grid-template-columns: 1fr; /* Change to a single column and adjusting padding for smaller screens */
         grid-gap: 2rem; 
@@ -887,224 +869,178 @@ section {
         padding: 1rem; /* Adjust padding for certificate text */
     }
 
-   
-}
-
-//CONTACT SECTION
-
-@media only screen and (max-width: 320px) {
-    .contact-container {
-        padding: 1rem 1.5rem; /* Adjust padding  */
-    }
-
-    #main-title .bg-text {
-        display: none; /* Hide the background text  */
-    }
-
-    #main-title h2 {
-        font-size: 1.9rem; /* Adjustin font size  */
-    }
-    .contact-content-con .left-contact h4{
-        font-size: 17px;
-    }
-    .contact-content-con .right-contact{
-        margin-left: 0;
-        padding-right: 25px;
-    }
-
-    .contact-content-con {
-        flex-direction: column; /* Stack the contact content in a column and adjustin the padding*/
-        padding-top: 2rem; 
-    }
-
-    .left-contact {
-        margin-left: 0; /* Remove left and right margin */
-        margin-right: 0;
-    }
-
-    .right-contact {
-        margin-left: 0; /* Remove left margin  */
-    }
-
-    .contact-item .icon {
-        grid-template-columns: 20px 1fr; /* Adjusting grid columns  */
-    }
-
-    .certificate img {
-        height: 150px; /* Adjust image height  */
-    }
-
-    .certificate-text {
-        padding: 0.8rem; /* Adjust padding */
-    }
-
-    .input-control input,
-    .input-control textarea {
-        padding: 0.4rem 0.8rem; 
-    }
-
-    .contact-icons {
-        margin-top: 1.5rem; /* top margin adjustment  */
-    }
-
-    .contact-icon a {
-        width: 40px; /* Adjust width and height for contact icons  */
-        height: 40px; 
-    }
-
-    .contact-form .main-btn {
-        font-size: 0.8rem; /* Adjust font size */
-    }
-    
-}
-
-
-//IPHONE X
-//HOME PAGE
-@media screen and (max-width: 380px) {
-    
-    body {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-        .header-content {
-            grid-template-columns: 1fr; /* Adjust grid layout for smaller screens */
-            height: auto; /* Adjust height for smaller screens */
+     
+        .contact-container {
+            padding: 1rem 1.5rem; /* Adjust padding  */
         }
+    
+        #main-title .bg-text {
+            display: none; /* Hide the background text  */
+        }
+    
+        #main-title h2 {
+            font-size: 1.9rem; /* Adjustin font size  */
+        }
+        .contact-content-con .left-contact h4{
+            font-size: 17px;
+        }
+        .contact-content-con .right-contact{
+            margin-left: 0;
+            padding-right: 25px;
+        }
+    
+        .contact-content-con {
+            flex-direction: column; /* Stack the contact content in a column and adjustin the padding*/
+            padding-top: 2rem; 
+        }
+    
+        .left-contact {
+            margin-left: 0; /* Remove left and right margin */
+            margin-right: 0;
+        }
+    
+        .right-contact {
+            margin-left: 0; /* Remove left margin  */
+        }
+    
+        .contact-item .icon {
+            grid-template-columns: 20px 1fr; /* Adjusting grid columns  */
+        }
+    
+        .certificate img {
+            height: 150px; /* Adjust image height  */
+        }
+    
+        .certificate-text {
+            padding: 0.8rem; /* Adjust padding */
+        }
+    
+        .input-control input,
+        .input-control textarea {
+            padding: 0.4rem 0.8rem; 
+        }
+    
+        .contact-icons {
+            margin-top: 1.5rem; /* top margin adjustment  */
+        }
+    
+        .contact-icon a {
+            width: 40px; /* Adjust width and height for contact icons  */
+            height: 40px; 
+        }
+    
+        .contact-form .main-btn {
+            font-size: 0.8rem; /* Adjust font size */
+        }
+        
     }
 
+//ipad 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-content {
+        grid-template-columns: 1fr;
+    }
     .header-content .left-header .image {
         
-        margin-left: 2rem;
+        height: 80%;
+        width: 60%;
+        margin-left: 1rem;
+        
+    }
+    .header-content .left-header .h-shape {
+        width: 49%;
+        height: 95%;
     }
 
     .header-content .right-header {
-        padding-left: 6px;
-        padding-right: 3rem;}
-
+        padding: 0%;
+        padding-left: 10px;
+        p{
+            font-size: 20px;
+        }
+        
+    }
+    .controls .control i {
+        font-size: 1.5rem; /* Adjust the size */
+    }
     .header-content .right-header .name {
-            font-size: 1.8rem;
-        }
+        font-size: 2.4rem;
+    }
+    .main-title {
+        margin-bottom: 5rem;
+    }
+    .about-stats,.about-container , .timeline { 
+        padding: 1rem 4.5rem;
+    }
+    .portfolios {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Certificates {
        
-
-    .left-header {
-        .h-shape {
-            width: 100%; /* Adjust shape width for smaller screens */
-        }
-
-        .image {
-            width: 100%; /* Adjust image width for smaller screens */
-            margin-left: 0; /* Adjust margin for smaller screens */
-            height: 70vh; /* Set a fixed height for the image container on smaller screens */
-        }
-
-        img {
-            width: 100%; /* Ensure the image scales appropriately */
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(100%);
-            transition: all 0.4s ease-in-out;
-            
-        }
+        grid-gap: 2rem;
+        padding: 2rem; /* Adjusting padding */
+        padding-right: 1.5rem; 
+    }
+    .main-title h2 .bg-text {
+       
+        font-size: 2rem;
+    }
+    .certificate {
+        margin-bottom: 2rem;
     }
 
-    .right-header {
-        padding-right: 2rem; /* Adjust padding for smaller screens */
+    .Cert-text {
+        padding-top: 1rem; /* Adjust padding  */
     }
 
-    .controls {
-        top: 55%; /* Adjust position for smaller screens */
+    #main-title h2 .bg-text {
+        font-size: 3rem;
     }
+    .contact-container {
+        padding: 1rem 2rem; /* Adjust padding  */
+        padding-right: 3rem; 
+    }
+    .contact-content-con {
+        flex-direction: column; /* Stack columns and centering  */
+        align-items: center; 
+    }
+    .left-contact {
+        margin-bottom: 2rem; /* Add spacing between sections */
+    }
+    .right-contact {
+        margin-left: 0; /* Remove left margin */
+    }
+    .contact-content-con .right-contact{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (min-height: 900px) {
+
+   .header-content .left-header .image {
+    width: 80%;
+    }
+    .portfolios {
+        padding-left: 9rem;
+        
+    }
+    #main-title {
+        padding-bottom: 40px;
+    }
+}
+
+
 
    
-}
 
-//ABOUT SECTION
 
-@media screen and (max-width: 380px) {
 
-   .main-title span.bg-text {
-    display: none; /* Hidin the background text */
-}
-
-    .about-container {
-        padding: 1rem; /* Adjust padding as needed */
-    }
-
-    .main-title {
-        margin-bottom: 4rem; /* Adjust margin as needed */
-    }
-
-    .about-stats {
-        padding: 1rem; /* Adjust padding as needed */
-    }
-
-    .timeline {
-        padding: 1rem 0 3rem 1rem; /* Adjust padding as needed */
-    }
-    .left-about p {
-        padding-right: 2rem;
-        font-size: 14px;
-    }
-}
-
-//Portfolio
-@media screen and (max-width: 380px) {
-#main-title .bg-text {
-    display: none; /* Hide the background text */
-}
-
-    .portfolios {
-        padding-left: 1.5rem; /* Adjust padding as needed */
-        grid-template-columns: 1fr; /* Display one column in a row */
-        grid-gap: 3rem; /* Adjust grid gap as needed */
-        padding-right: 20px;
-        padding-right: 1.5rem;
-    }
-
-    .portfolio-item {
-        max-width: none; /* Remove max-width on portfolio items */
-        margin-bottom: 2rem; /* Add spacing between portfolio items */
-    }
-
-    .wrapper img {
-        height: auto; /* Allow the height to adjust based on content */
-    }
-
-    .container h3 {
-        font-size: 1.2rem; /* Adjust font size as needed */
-    }
-}
-
-//Certificates
-@media screen and (max-width: 380px) {
-    .main-title .bg-text {
-        display: none; /* Hide the background text */
-    }
     
-    .Certificates-content.main-title {
-        font-size:1.5rem ;}
+
+
     
-    .Certificates {
-        grid-template-columns: 1fr; /* Display one column in a row */
-        grid-gap: 2rem; /* Adjust grid gap as needed */
-        padding: 1rem; /* Adjust padding as needed */
-    }
 
-    .certificate {
-        max-width: none; /* Remove max-width on certificates */
-        margin-bottom: 2rem; /* Add spacing between certificates */
-    }
 
-    .certificate img {
-        height: auto; /* Allow the height to adjust based on content */
-    }
 
-    .certificate-text {
-        padding: 1rem; /* Adjust padding as needed */
-        border-top: 5px solid var(--color-secondary); /* Reduce the border-top size */
-    }
-
-    .certificate-text h4 {
-        font-size: 1.2rem; /* Adjust font size as needed */
-    }
-}
 
